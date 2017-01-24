@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>Understanding the Grid System in Bootstrap</h1>
+		<h2>The grid system uses 12 columns:</h2>
+		<div class="row">
+			<div class="col-xs-1"><strong>col-xs-1</strong></div>
+			<div class="col-xs-1"><strong>col-xs-1</strong></div>
+			<div class="col-xs-1"><strong>col-xs-1</strong></div>
+			<div class="col-xs-1"><strong>col-xs-1</strong></div>
+			<div class="col-xs-1"><strong>col-xs-1</strong></div>
+			<div class="col-xs-1"><strong>col-xs-1</strong></div>
+			<div class="col-xs-1"><strong>col-xs-1</strong></div>
+			<div class="col-xs-1"><strong>col-xs-1</strong></div>
+			<div class="col-xs-1"><strong>col-xs-1</strong></div>
+			<div class="col-xs-1"><strong>col-xs-1</strong></div>
+			<div class="col-xs-1"><strong>col-xs-1</strong></div>
+			<div class="col-xs-1"><strong>col-xs-1</strong></div>
+		</div>
+		<hr>
+		<h2>Going over 12 columns in sum will move other columns down:</h2>
+		<div class="row">
+			<div class="col-md-6"><strong>col-md-6</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, aperiam ratione dignissimos dolorum qui odit excepturi quod amet modi molestiae, illum laboriosam. Voluptate pariatur perferendis quaerat aspernatur nemo ut temporibus!</div>
+			<div class="col-md-6"><strong>col-md-6</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ex sit doloremque, temporibus modi quos eos mollitia laboriosam saepe accusamus perferendis quasi optio impedit porro, assumenda ea beatae cumque hic.</div>
+			<div class="col-md-6"><strong>col-md-6</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam veniam vero aliquam corporis similique ab quasi magnam blanditiis fugiat asperiores facere et voluptatibus nostrum, quisquam doloremque, earum dolore. Ex, vel.</div>
+		</div>
+		<hr>
+		<h2>You can offset using col-*-offset-*</h2>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-6"><strong>col-md-6 col-md-offset-6</strong></div>
+		</div>
+		<hr>
+		<h2>You can mix column sizes in one row, as long as they add up to 12:</h2>
+		<div class="row">
+			<div class="col-md-4"><strong>col-md-4</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, ex consequuntur debitis porro placeat et, tempore laboriosam ipsum. Vel ipsum ea facere, alias accusantium dolores commodi hic veritatis. Aliquid, ad.</div>
+			<div class="col-md-8"><strong>col-md-8</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus assumenda corporis placeat repudiandae repellat, labore, dicta similique odit vitae, at, velit a alias possimus dolore quisquam aut nihil praesentium porro.</div>
+		</div>
+		<div class="row">
+			<h2>You can control the size of the column on various screen sizes:</h2>
+			<div class="col-xs-4 col-sm-10 col-md-5 col-lg-11 col-xl-6"><strong>col-xs-4 col-sm-10 col-md-5 col-lg-11 col-xl-6</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga impedit consequatur laboriosam sapiente, sed. Harum rem necessitatibus, praesentium aliquam alias, minima commodi numquam eligendi mollitia. Praesentium, est placeat ducimus adipisci!</div>
+		</div>
+		<div class="row">
+			<h2>Columns must always be in rows:</h2>
+			<pre><code>
+				&lt;div class="row"&gt;
+					&lt;div class="col-xs-6"&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			</code></pre>
+		</div>
+	</div>
+</body>
+</html>
